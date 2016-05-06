@@ -35,6 +35,10 @@ controller.hears(['tell me about horses', 'horse', 'horses', 'fact', 'facts', 't
   bot.reply(message, randomFact());
 });
 
+controller.hears(['shut up'], 'direct_message,direct_mention,mention', function(bot, message) {
+  bot.reply(message, 'I don\'t shut up, I grow up, and when I look at you I throw up');
+});
+
 controller.hears(['call me (.*)', 'my name is (.*)'], 'direct_message,direct_mention,mention', function(bot, message) {
   var name = message.match[1];
   controller.storage.users.get(message.user, function(err, user) {
