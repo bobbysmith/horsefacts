@@ -35,7 +35,7 @@ controller.hears(['tell me about horses', 'horse', 'horses', 'fact', 'facts', 't
   bot.reply(message, randomFact());
 });
 
-controller.hears(['shut up'], 'direct_message,direct_mention,mention', function(bot, message) {
+controller.hears(['shut up', 'stop'], 'direct_message,direct_mention,mention', function(bot, message) {
   bot.reply(message, 'I don\'t shut up, I grow up, and when I look at you I throw up');
 });
 
