@@ -11,6 +11,5 @@
   "license": "ISC",
   "dependencies": {
     "botkit": "^0.1.1",
-    "express": "^4.13.4"
   }
 }
