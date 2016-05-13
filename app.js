@@ -70,7 +70,7 @@ controller.hears(['call me (.*)', 'my name is (.*)'], 'direct_message,direct_men
 
 controller.hears(['drake'], 'direct_message,direct_mention,mention', function(bot, message) {
   bot.reply(message, ':drake: + @bethany.s = :hearts:');
-})
+});
 
 controller.hears(['who are you', 'what is your name', 'who is @horsefacts', 'who is horsefacts', 'who is horse facts'], 'direct_message,direct_mention,mention', function(bot, message) {
 
